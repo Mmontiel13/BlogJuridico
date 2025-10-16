@@ -949,8 +949,8 @@ Es importante contar con asesoría legal especializada para garantizar que se re
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <CarouselPrevious className="hidden md:flex" />
-              <CarouselNext className="hidden md:flex" />
+              <CarouselPrevious/>
+              <CarouselNext/>
             </Carousel>
           </div>
         </AnimatedSection>
@@ -1275,8 +1275,8 @@ function DiscussionSection() {
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <CarouselPrevious className="hidden md:flex" />
-              <CarouselNext className="hidden md:flex" />
+              <CarouselPrevious/>
+              <CarouselNext/>
             </Carousel>
           </div>
         </AnimatedSection>
@@ -1319,7 +1319,7 @@ Mensaje: ${mensaje}`
   }
 
   return (
-    <section id="contacto" className="py-20 md:py-32 bg-[#F1F5F9]">
+    <section id="contacto" className="py-5 md:py-5 bg-[#F1F5F9]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection>
           <div className="text-center mb-16">
@@ -1332,7 +1332,7 @@ Mensaje: ${mensaje}`
           </div>
         </AnimatedSection>
 
-        <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-12">
+        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
           <AnimatedSection>
             <Card className="h-full">
               <CardHeader>
@@ -1450,7 +1450,7 @@ Mensaje: ${mensaje}`
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-1">Email</h4>
-                      <p className="text-gray-600">notificaciones@calvacorroabogados.net</p>
+                      <p className="text-gray-600 break-all">notificaciones@calvacorroabogados.net</p>
                     </div>
                   </div>
                 </CardContent>
@@ -1461,7 +1461,7 @@ Mensaje: ${mensaje}`
                   <CardTitle className="text-xl text-[#1D4E89]">Síguenos</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <div className="flex gap-4">
+                  <div className="flex gap-4 justify-center">
                     <a
                       href="https://www.facebook.com/CalvaCorroAbogados"
                       target="_blank"
